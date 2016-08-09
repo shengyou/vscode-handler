@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=VS Code URL Handler
+Comment=Handle URL Scheme vscode://
+Icon=vscode-hanlder
+NoDisplay=true
+Exec=vscode-handler %u
+MimeType=x-scheme-handler/vscode

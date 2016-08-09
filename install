@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+sudo cp vscode-handler.desktop /usr/share/applications
+sudo update-desktop-database
+
+sudo cp vscode-handler /usr/local/bin/
+sudo chmod +x /usr/local/bin/vscode-handler
