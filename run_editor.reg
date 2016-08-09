@@ -1,0 +1,8 @@
+REGEDIT4
+
+[HKEY_CLASSES_ROOT\vscode]
+@="URL:vscode Protocol"
+"URL Protocol"=""
+
+[HKEY_CLASSES_ROOT\vscode\shell\open\command]
+@="wscript \"C:\\Program Files\\VS Code Protocol\\run_editor.js\" \"%1\""
