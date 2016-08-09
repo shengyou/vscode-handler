@@ -80,7 +80,7 @@ Installing on Mac
 
 
 
-## Using with Laravel Tracy 
+# Using with Laravel Tracy 
 
 Setup your `config/tracy.php` like this:
 
