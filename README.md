@@ -1,5 +1,5 @@
 # Visual Studio Code URL Handler
-A `vscode://` *URL handler* for  **[Visual Studio Code](https://code.visualstudio.com/)** on three main platform (Windows, Mac, Ubuntu).
+A `vscode://` *URL handler* for **[Visual Studio Code](https://code.visualstudio.com/)** on three main platform (Windows, Mac, Ubuntu).
 
 Following string must be specified as an editor in your app:
 
@@ -41,9 +41,14 @@ Installing on Mac
 
 1. clone this repository
 2. go to cloned folder
-3. drag  ```VS Code Handler.app``` to ```Applications``` folder
-4. delete cloned folder
+3. drag ```VS Code Handler.app``` to your ```/Applications``` directory
+4. Open once to register the handler
+5. delete cloned folder
 
+
+#### Notice:
+
+The app doesn’t open? [Don’t panic!](https://onflapp.wordpress.com/support/app-cannot-be-opened/)
 
 #### Reference:
 
@@ -77,20 +82,45 @@ Installing on Mac
 #### Notice:
 
 - only test on Ubuntu Linux 14.04 Desktop
+- only works with Firefox (Google Chrome doesn't works)
 
 
 
-# Using with Laravel Tracy 
+# Using with [Laravel Tracy](https://github.com/recca0120/laravel-tracy) 
 
-Setup your `config/tracy.php` like this:
+#### Steps:
 
-```bash
-return [
-	//...
-    'editor'       => 'vscode://open?url=file://%file&line=%line',
-    //...
-];
-```
+1. Install Laravel Tracy using composer command
+
+   ```bash
+   composer require recca0120/laravel-tracy
+   ```
+
+2. Include the service provider within `config/app.php`
+
+   ```bash
+   'providers' => [
+       //...
+       Recca0120\LaravelTracy\ServiceProvider::class,
+       //...
+   ];
+   ```
+
+3. Publish assets using artisan command
+
+   ```bash
+   php artisan vendor:publish --provider="Recca0120\LaravelTracy\ServiceProvider"
+   ```
+
+4. Setup your `config/tracy.php` like this
+
+   ```bash
+   return [
+   	//...
+       'editor' => 'vscode://open?url=file://%file&line=%line',
+       //...
+   ];
+   ```
 
 #### Reference:
 
