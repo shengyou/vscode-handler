@@ -15,5 +15,5 @@ if (match) {
 
     // Run command in the shell
     var shell = WScript.CreateObject("WScript.Shell");
-    shell.Run(command);
+    shell.Run(command, 0);
 }
