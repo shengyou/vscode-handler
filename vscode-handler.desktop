@@ -7,5 +7,5 @@ Name=VS Code URL Handler
 Comment=Handle URL Scheme vscode://
 Icon=vscode-handler
 NoDisplay=true
-Exec=vscode-handler %u
+Exec=/usr/local/vscode-handler %u
 MimeType=x-scheme-handler/vscode
