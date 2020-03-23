@@ -69,6 +69,12 @@ The app doesn’t open? [Don’t panic!](https://onflapp.wordpress.com/support/a
 2. run ```sudo bash install``` in console
 3. delete cloned folder
 
+#### Testing:
+
+Type this url in any browser:
+   ```vscode://open/?url=file:///etc/hosts```
+   
+
 #### Reference:
 
 * [https://github.com/algorich/sublime-url-handler](https://github.com/algorich/sublime-url-handler)
@@ -81,8 +87,8 @@ The app doesn’t open? [Don’t panic!](https://onflapp.wordpress.com/support/a
 
 #### Notice:
 
-- only test on Ubuntu Linux 14.04 Desktop
-- only works with Firefox (Google Chrome doesn't works)
+- works on any version of Ubuntu Linux Desktop
+- works with both Firefox and Google Chrome
 
 
 
